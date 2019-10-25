@@ -1,0 +1,29 @@
+{
+    "name": "fw4/sweepbright-api",
+    "type": "library",
+    "description": "PHP library for implementing the SweepBright API",
+    "keywords": ["sweepbright", "api", "sdk"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "~6.0",
+        "league/oauth2-client": "^2.4",
+        "ocramius/package-versions": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": { "SweepBright\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "SweepBright\\Tests\\": "tests/"}
+    },
+    "scripts": {
+        "test": "@php ./vendor/bin/phpunit --colors",
+        "test-coverage": "@php ./vendor/bin/phpunit --colors --coverage-html ./coverage"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

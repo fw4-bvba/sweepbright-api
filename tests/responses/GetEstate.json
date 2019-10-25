@@ -1,0 +1,175 @@
+{
+    "id": "12345678-1234-1234-1234-123456789012",
+    "is_project": false,
+    "project_id": null,
+    "type": "apartment",
+    "sub_type": "duplex",
+    "negotiation": "sale",
+    "rent_period": "month",
+    "status": "prospect",
+    "images": [
+        {
+            "id": "12345678-1234-1234-1234-123456789012",
+            "filename": "image0.jpg",
+            "description": "",
+            "url": "https://sweepbright-public-api-production.s3.eu-west-1.amazonaws.com/images/image.jpg",
+            "url_expires_on": "2019-01-01T00:00:00+00:00",
+            "ordinal": 1
+        }
+    ],
+    "living_rooms": 1,
+    "kitchens": 1,
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "toilets": 2,
+    "floors": null,
+    "showrooms": null,
+    "manufacturing_areas": null,
+    "storage_rooms": null,
+    "kitchen_condition": "good",
+    "bathroom_condition": "mint",
+    "rooms": [],
+    "sizes": {
+        "liveable_area": {
+            "size": 100,
+            "unit": "sq_m"
+        }
+    },
+    "features": {
+        "energy": {
+            "gas": true,
+            "fuel": false,
+            "heat_pump": false,
+            "electricity": false
+        },
+        "comfort": {
+            "home_automation": false,
+            "water_softener": false,
+            "fireplace": true,
+            "walk_in_closet": false,
+            "home_cinema": false,
+            "wine_cellar": true,
+            "sauna": false,
+            "fitness_room": false
+        },
+        "ecology": {
+            "double_glazing": true,
+            "solar_panels": false,
+            "solar_boiler": false,
+            "rainwater_harvesting": false,
+            "insulated_roof": false
+        },
+        "security": {
+            "alarm": true,
+            "concierge": false,
+            "video_surveillance": false
+        },
+        "heating_cooling": {
+            "central_heating": true,
+            "floor_heating": false,
+            "air_conditioning": true
+        }
+    },
+    "building": {
+        "renovation": null,
+        "construction": null
+    },
+    "permissions": null,
+    "regulations": null,
+    "legal_mentions": {
+        "en": ""
+    },
+    "amenities": [
+        "terrace"
+    ],
+    "epc_value": null,
+    "epc_category": null,
+    "epc_reference": null,
+    "description_title": {
+        "en": "Sample Apartment For Sale"
+    },
+    "description": {
+        "en": "This is a fantastic sample apartment with stunning views in a quiet location."
+    },
+    "video_url": null,
+    "documents": [],
+    "general_condition": "new",
+    "appointment_service_url": "",
+    "custom_price": null,
+    "cadastral_income": null,
+    "mandate": {
+        "start_date": null,
+        "end_date": null,
+        "exclusive": null
+    },
+    "internal_note": null,
+    "publish_status": "public",
+    "terrace_orientation": "SW",
+    "location": {
+        "box": "",
+        "geo": {
+            "latitude": 50.79,
+            "longitude": 4.31
+        },
+        "city": "Drogenbos",
+        "floor": "",
+        "number": "111",
+        "street": "Rue Neuve",
+        "country": "BE",
+        "addition": "",
+        "street_2": "",
+        "formatted": "111 Rue Neuve, Drogenbos",
+        "postal_code": "1620",
+        "formatted_agency": "Rue Neuve 111, 1620 Drogenbos",
+        "hidden": false
+    },
+    "price": {
+        "amount": 450000,
+        "currency": "EUR",
+        "hidden": false
+    },
+    "price_negotiated": null,
+    "price_costs": [],
+    "price_taxes": [],
+    "negotiator": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "example@sweepbright.com",
+        "phone": null,
+        "photo_url": null,
+        "photo_url_expires_on": null
+    },
+    "auction": {
+        "start_date": ""
+    },
+    "open_homes": [],
+    "agency_commission": {
+        "fixed_fee": null,
+        "percentage": null
+    },
+    "occupancy": {
+        "occupied": false,
+        "available_from": null,
+        "contact_details": null,
+        "tenant_contract": {
+            "end_date": null,
+            "start_date": null
+        }
+    },
+    "office": {
+        "id": "12345678-1234-1234-1234-123456789012",
+        "name": "My Team"
+    },
+    "buyers": [],
+    "vendors": [
+        {
+            "first_name": "Mrs",
+            "last_name": "Bright (Sample Vendor)",
+            "email": "mrsbright@sweepbright.com",
+            "phone": null
+        }
+    ],
+    "settings": {
+        "reference": null
+    }
+}

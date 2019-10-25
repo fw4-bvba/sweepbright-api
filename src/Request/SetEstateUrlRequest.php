@@ -1,0 +1,16 @@
+<?php
+/*
+ * This file is part of the fw4/sweepbright-api library
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace SweepBright\Request;
+
+class SetEstateUrlRequest extends Request
+{
+    const PROPERTIES = [
+        'url' => 'string',
+    ];
+}
