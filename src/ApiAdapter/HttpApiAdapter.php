@@ -18,21 +18,20 @@ use SweepBright\Exception\ServerValidationException;
 final class HttpApiAdapter extends ApiAdapter
 {
     private const BASE_URL = 'https://website.sweepbright.com/api/';
-    private const ACCEPT = 'application/vnd.sweepbright.v20190920+json';
     
     private $oAuthProvider;
     private $accessToken;
     
-    public function __construct()
+    public function __construct(int $version)
     {
-        $version = \PackageVersions\Versions::getVersion('fw4/sweepbright-api');
+        $package_version = \PackageVersions\Versions::getVersion('fw4/sweepbright-api');
         
         $this->oAuthProvider = new OAuthProvider([
             'urlAccessToken' => self::BASE_URL . 'oauth/token',
             'headers' => [
-                'Accept'       => self::ACCEPT,
+                'Accept'       => 'application/vnd.sweepbright.v' . $version . '+json',
                 'Content-Type' => 'application/json',
-                'User-Agent'   => 'fw4-sweepbright-api/' . $version,
+                'User-Agent'   => 'fw4-sweepbright-api/' . $package_version,
             ],
         ]);
     }

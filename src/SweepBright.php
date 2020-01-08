@@ -16,6 +16,15 @@ use SweepBright\ApiAdapter\HttpApiAdapter;
 final class SweepBright
 {
     private $apiAdapter;
+    private $version;
+
+    /**
+     * @param int $version Check official documentation for accepted values
+     */
+    public function __construct(int $version = 20191206)
+    {
+        $this->version = $version;
+    }
     
     /**
      * Get estate data. Only callable after the webhook was triggered for the
@@ -115,7 +124,7 @@ final class SweepBright
     private function getApiAdapter(): ApiAdapterInterface
     {
         if (!isset($this->apiAdapter)) {
-            $this->apiAdapter = new HttpApiAdapter();
+            $this->apiAdapter = new HttpApiAdapter($this->version);
         }
         return $this->apiAdapter;
     }
