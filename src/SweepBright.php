@@ -23,10 +23,10 @@ final class SweepBright
      *
      * @param string $estate_id
      */
-    public function getEstate(string $estate_id): Response
+    public function getEstate(string $estate_id): ?Response
     {
         $response = $this->getApiAdapter()->request('GET', 'estates/' . $estate_id);
-        return new Response($response);
+        return is_null($response) ? null : new Response($response);
     }
     
     /**

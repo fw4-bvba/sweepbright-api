@@ -14,5 +14,5 @@ interface ApiAdapterInterface
 {
     public function setAccessToken(AccessTokenInterface $token): void;
     public function requestAccessToken(string $client_id, string $client_secret): AccessTokenInterface;
-    public function requestBody(string $method, string $endpoint, ?string $body = null): string;
+    public function requestBody(string $method, string $endpoint, ?string $body = null): ?string;
 }

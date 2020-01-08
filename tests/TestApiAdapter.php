@@ -35,7 +35,7 @@ final class TestApiAdapter extends ApiAdapter
         $this->queueResponse($response);
     }
 
-    public function requestBody(string $method, string $endpoint, ?string $body = null): string
+    public function requestBody(string $method, string $endpoint, ?string $body = null): ?string
     {
         return array_shift($this->responseQueue) ?? '';
     }

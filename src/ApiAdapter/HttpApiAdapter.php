@@ -61,7 +61,7 @@ final class HttpApiAdapter extends ApiAdapter
         return $this->accessToken;
     }
     
-    public function requestBody(string $method, string $endpoint, ?string $body = null): string
+    public function requestBody(string $method, string $endpoint, ?string $body = null): ?string
     {
         $options = [];
         if (isset($body)) {
@@ -83,6 +83,8 @@ final class HttpApiAdapter extends ApiAdapter
                     $response_body['errors'] ?? [],
                     $exception
                 );
+            } else if ($exception->getCode() === 404) {
+                return null;
             } else {
                 throw $exception;
             }
