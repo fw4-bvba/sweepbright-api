@@ -5,13 +5,13 @@
     "keywords": ["sweepbright", "api", "sdk"],
     "license": "MIT",
     "require": {
-        "php": "^7.1",
-        "guzzlehttp/guzzle": "~6.0",
+        "php": "^7.1|^8.0",
+        "guzzlehttp/guzzle": "~6.0|~7.0",
         "league/oauth2-client": "^2.4",
-        "ocramius/package-versions": "^1.4"
+        "ocramius/package-versions": "^2.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.4"
+        "phpunit/phpunit": "^8.4|^9.0"
     },
     "autoload": {
         "psr-4": { "SweepBright\\": "src/" }
