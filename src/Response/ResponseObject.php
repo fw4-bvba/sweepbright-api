@@ -11,6 +11,7 @@ namespace SweepBright\Response;
 use SweepBright\Exception\ClientValidationException;
 use DateTime;
 use JsonSerializable;
+use ReturnTypeWillChange;
 
 class ResponseObject implements JsonSerializable
 {
@@ -99,6 +100,7 @@ class ResponseObject implements JsonSerializable
 
     /* JsonSerializable implementation */
 
+    #[ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->getData();
